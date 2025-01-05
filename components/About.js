@@ -7,7 +7,7 @@ export function About() {
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">About Me</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Hi, I'm Your Name
+            Hi, I'm Your Elias
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             I'm a full-stack developer with a passion for creating beautiful, functional, and user-friendly websites.

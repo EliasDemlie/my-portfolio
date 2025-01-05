@@ -64,7 +64,7 @@ export function Contact() {
                 id="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="  mt-1 block w-full shadow-sm sm:text-sm border-red-500 rounded-md"
                 required
               />
             </div>
