@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import axios from "axios";
 
@@ -20,9 +21,9 @@ export function Contact() {
     e.preventDefault(); // Prevent default form submission
 
     try {
-      const response = await axios.post("/api/mailer", {
+      const response = await axios.post("api/mailer", {
         to: "eliasitisme@gmail.com", // You can specify a fixed recipient or use a configured email
-        subject: `New message from ${formData.name}`,
+        subject: `portifolio New message from ${formData.name}`,
         text: formData.message,
       });
 
