@@ -53,11 +53,11 @@ export default function Contact() {
                     </p>
                 </div>
                 <div className="mt-10 max-w-lg mx-auto">
-                    <form className="grid grid-cols-1 gap-6" onSubmit={sendEmail}>
+                    <form className="grid grid-cols-1 gap-4" onSubmit={sendEmail}>
                         <div>
                             <label
                                 htmlFor="name"
-                                className=" py-2 block text-sm font-medium text-gray-200"
+                                className=" p-2 block text-sm font-medium text-gray-200"
                             >
                                 Name
                             </label>
@@ -67,14 +67,14 @@ export default function Contact() {
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className=" py-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-2 block w-full text-white bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             />
                         </div>
                         <div>
                             <label
                                 htmlFor="email"
-                                className=" py-2 block text-sm font-medium text-gray-200"
+                                className=" p-2 block text-sm font-medium text-gray-200"
                             >
                                 Email
                             </label>
@@ -84,14 +84,14 @@ export default function Contact() {
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="py-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             />
                         </div>
                         <div>
                             <label
                                 htmlFor="message"
-                                className=" py-2 block text-sm font-medium text-gray-200"
+                                className=" p-2 block text-sm font-medium text-gray-200"
                             >
                                 Message
                             </label>
@@ -101,7 +101,7 @@ export default function Contact() {
                                 rows={4}
                                 value={formData.message}
                                 onChange={handleChange}
-                                className=" py-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             ></textarea>
                         </div>
@@ -111,7 +111,7 @@ export default function Contact() {
                         <div>
                             <button
                                 type="submit"
-                                className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${loading
+                                className={`mt-4 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${loading
                                         ? "bg-gray-400 cursor-not-allowed"
                                         : "bg-cyan-600 hover:bg-cyan-400"
                                     } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-300 hover:text-white`}
