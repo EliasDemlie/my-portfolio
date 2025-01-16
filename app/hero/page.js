@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-export function Hero() {
+export  default function Hero() {
   return (
     <div className="min-h-screen overflow-y-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16  text-white">
       
@@ -29,6 +29,7 @@ export function Hero() {
               width={300}
               height={300}
               className="object-cover"
+              priority
             />
           </div>
         </div>

@@ -1,6 +1,5 @@
-export function Footer() {
-    const date = new Date();
-    const year = date.getFullYear();
+export default function Footer() {
+    
 
     return (
         <footer className="flex-shrink-0 py-4 px-4 shadow-xl bg-gray-800 border-t-2 border-gray-600">
@@ -20,7 +19,7 @@ export function Footer() {
 
                 {/* Copyright Notice */}
                 <div className=" hidden sm:block text-center text-gray-100">
-                    &copy; {year} Elias D.
+                    &copy; 2025 Elias D.
                 </div>
             </div>
         </footer>
