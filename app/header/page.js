@@ -10,7 +10,7 @@ export function Header(){
         setisClick(!isClick);
     };
     return (
-        <header className="w-full shadow-sm z-50 pt-6">
+            <header className="w-full shadow-sm z-50 pt-6 bg-opacity-95 sticky top-0">
             <nav className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-6 ">
                 <div className="flex justify-between h-10">
                     <div className="flex items-center">
