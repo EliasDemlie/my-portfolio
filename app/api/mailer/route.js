@@ -10,7 +10,7 @@ export async function POST(req) {
                 JSON.stringify({ error: "Missing required fields" }),
                 { status: 400, headers: { "Content-Type": "application/json" } }
             );
-        }
+        };
 
         const transporter = nodemailer.createTransport({
             service: "Gmail",

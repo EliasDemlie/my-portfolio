@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import ExperienceCard from './ExperienceCard';
 
 export  default function Hero() {
   return (
@@ -101,24 +102,19 @@ export  default function Hero() {
       </div>
       <div className="mt-10 lg:mt-16 text-center lg:text-left">
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-6 bg-gray-800 rounded-lg shadow-md">
-            <h3 className=" tracking-widest font-bold">
-              <span className="font-extrabold text-4xl">0 </span> Years Experience
-            </h3>
-            {/* <p className="mt-2 text-gray-600">While I'm just starting my professional journey, I'm committed to continuous learning and growth.</p> */}
-          </div>
-          <div className="p-6 bg-gray-800 rounded-lg shadow-md">
-            <h3 className=" tracking-widest font-bold">
-              <span className="font-extrabold text-4xl">3 </span> Projects Completed
-            </h3>
-            {/* <p className="mt-2 text-gray-600">I have successfully completed 5 projects, applying my skills to solve real-world challenges.</p> */}
-          </div>
-          <div className="p-6 bg-gray-800 rounded-lg shadow-md">
-            <h3 className=" tracking-widest font-bold">
-              <span className="font-extrabold text-4xl">6 </span> Technologies Mastered
-            </h3>
+
+
+          < ExperienceCard
+          number={"0"} description={'Experience'}
+          />
+          < ExperienceCard
+            number={"3"} description={'Projects Completed'}
+          />
+          {/* <p className="mt-2 text-gray-600">I have successfully completed 5 projects, applying my skills to solve real-world challenges.</p> */}
+          < ExperienceCard
+            number={"6"} description={'Technologies Mastered'}
+          />
             {/* <p className="mt-2 text-gray-600">I have honed my expertise in 6 key technologies, including React, Node.js, and more.</p> */}
-          </div>
         </div>
       </div>
 
