@@ -1,16 +1,36 @@
 
 "use client"
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Header(){
     const [isClick, setisClick] = useState(false);
-    
+    const [isScrolled, setIsScrolled] = useState(false);
+
     const toggleNavBar = () => {
         setisClick(!isClick);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-            <header className="w-full shadow-sm z-50 pt-6 bg-opacity-95 sticky top-0">
+        <header 
+             className={`w-full shadow-sm z-50 pt-6 sticky top-0 transition-colors duration-200 
+            ${isScrolled ? "backdrop-blur-md bg-customColor  bg-opacity-80" : "bg-transparent" }`}>
             <nav className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-6 ">
                 <div className="flex justify-between h-10">
                     <div className="flex items-center">
