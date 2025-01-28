@@ -67,7 +67,7 @@ export default function Contact() {
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className=" p-2 block w-full text-white bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-4 block w-full text-white bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             />
                         </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className=" p-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-4 block w-full text-white bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             />
                         </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                                 rows={4}
                                 value={formData.message}
                                 onChange={handleChange}
-                                className=" p-2 block w-full bg-gray-700 sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
+                                className=" p-4 block w-full bg-gray-700 text-white sm:text-sm border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-ring-slate-600"
                                 required
                             ></textarea>
                         </div>
