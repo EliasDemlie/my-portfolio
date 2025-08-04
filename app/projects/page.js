@@ -1,18 +1,24 @@
-// pages/Project.js
 import ProjectCard from './ProjectCard';
 
 const Project = () => {
   const projects = [
-    {
-      id: 1,
-      title: 'e-commerce website',
-      description: 'This e-commerce project is a full-stack web application designed to deliver a smooth and efficient online shopping experience. Built using React, Node.js, Express, and MongoDB.',
-      imgUrl: '/images/e-commerce.avif'
-    },
-    { id: 2, title: 'weather APP', 
+ {
+  id: 1,
+  title: 'AI-Powered E-Commerce Platform',
+  description: 'An intelligent full-stack e-commerce solution that leverages AI to deliver personalized shopping experiences, smart product recommendations, integrated AI chatbots for customer support, and a seamless checkout process. Built with React, Node.js, Express, and MongoDB for speed, scalability, and efficiency.',
+   framework:"",
+   imgUrl: '/images/e-commerce.avif'
+},
+
+
+    { id: 2, title: 'RealTime Chat app', 
+description: "A responsive and feature-rich real-time chat application designed for instant communication between users. It supports private messaging, real-time typing indicators, and video calls using WebSocket technology for low-latency performance. Built with React.js, Node.js, and Tailwind CSS for a modern, responsive, and visually appealing user interface.",
+     framework:"",
+       imgUrl: '/images/weatherAPP.png' },
+        { id: 2, title: 'weather APP', 
       description: "This Weather App is a user-friendly web application built using JavaScript, HTML, CSS, and a REST API that allows users to search and view real-time weather data for various cities worldwide. The app displays the temperature and humidity for the current day and the next three days.",
       framework:"",
-       imgUrl: '/images/weatherAPP.png' }
+       imgUrl: '/images/weatherAPP.png' },
     
   ];
 
@@ -31,7 +37,7 @@ const Project = () => {
                 title={project.title}
                 description={project.description}
                 framework={project.framework}
-                imgUrl={project.imgUrl}  // Pass the imgUrl prop
+                imgUrl={project.imgUrl}  
               />
             ))}
           </div>
