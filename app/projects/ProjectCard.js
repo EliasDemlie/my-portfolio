@@ -1,4 +1,3 @@
-// components/ProjectCard.js
 import Image from 'next/image';
 
 const ProjectCard = ({ imgUrl, title, description, framework }) => {
