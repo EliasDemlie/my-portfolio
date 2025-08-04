@@ -39,7 +39,7 @@ export  default function Hero() {
       <div className="mt-4 mb-6 px-2 lg:flex lg:items-center lg:space-x-10">
         {/* Download Button */}
         <a
-          href="/cv.pdf"
+          href="/Elias_demlie_cv.pdf"
           download
           className="mb-4 lg:mb-0 inline-block px-14 py-2 text-cyan-400 border border-cyan-400 rounded-full text-base 
             font-medium transition duration-300 hover:bg-cyan-400 hover:text-gray-800  focus:bg-cyan-400 focus:text-gray-800  tracking-widest"

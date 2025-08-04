@@ -14,8 +14,10 @@ const Project = () => {
     { id: 2, title: 'RealTime Chat app', 
 description: "A responsive and feature-rich real-time chat application designed for instant communication between users. It supports private messaging, real-time typing indicators, and video calls using WebSocket technology for low-latency performance. Built with React.js, Node.js, and Tailwind CSS for a modern, responsive, and visually appealing user interface.",
      framework:"",
-       imgUrl: '/images/weatherAPP.png' },
-        { id: 2, title: 'weather APP', 
+       imgUrl: '/images/chat-app-screen-shot.png'
+       },
+        {
+           id: 3, title: 'weather APP', 
       description: "This Weather App is a user-friendly web application built using JavaScript, HTML, CSS, and a REST API that allows users to search and view real-time weather data for various cities worldwide. The app displays the temperature and humidity for the current day and the next three days.",
       framework:"",
        imgUrl: '/images/weatherAPP.png' },

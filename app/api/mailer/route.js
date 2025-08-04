@@ -2,15 +2,14 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
     try {
-
         const { to, subject, text } = await req.json();
 
-        if (!to || !subject || !text) {
+        if (!subject || !text) {
             return new Response(
                 JSON.stringify({ error: "Missing required fields" }),
                 { status: 400, headers: { "Content-Type": "application/json" } }
             );
-        };
+        }
 
         const transporter = nodemailer.createTransport({
             service: "Gmail",
@@ -20,18 +19,12 @@ export async function POST(req) {
             },
         });
 
-        // Test the transporter
-        transporter.verify((err, success) => {
-            if (err) {
-                console.error("Error with transporter:", err);
-            } else {
-                console.log("Transporter verified successfully:", success);
-            }
-        });
+        // Verify transporter
+        await transporter.verify();
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to,
+            to: to || process.env.NOTIFICATION_EMAIL, 
             subject,
             text,
         };
@@ -43,6 +36,7 @@ export async function POST(req) {
             JSON.stringify({ message: "Email sent successfully" }),
             { status: 200, headers: { "Content-Type": "application/json" } }
         );
+
     } catch (error) {
         console.error("Error sending email:", error);
         return new Response(

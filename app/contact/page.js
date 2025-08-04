@@ -27,7 +27,6 @@ export default function Contact() {
 
         try {
             const response = await axios.post("api/mailer", {
-                to: "eliasitisme@gmail.com",
                 subject: `New message from: ${formData.email} (${formData.name})`,
                 text: formData.message,
             });
