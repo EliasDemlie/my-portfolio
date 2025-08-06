@@ -105,7 +105,7 @@ export  default function Hero() {
 
 
           < ExperienceCard
-          number={"2+"} description={'Experience'}
+          number={"2+ years"} description={'Experience'}
           />
           < ExperienceCard
             number={"3"} description={'Projects Completed'}
