@@ -10,7 +10,7 @@ export  default function Hero() {
         {/* intro */}
         <div className="mt-6 lg:mt-0 lg:w-1/2 lg:pr-8">
           <p className="mt-2 sm:mt-4 tracking-widest font-bold text-center sm:text-left">
-            Software developer
+            full stack developer
           </p>
           <h1 className="mt-2 text-5xl leading-tight font-extrabold tracking-wider text-white text-center sm:text-left">
             Hello, I am <br /><span className="text-cyan-400">Elias Demlie</span>
@@ -105,7 +105,7 @@ export  default function Hero() {
 
 
           < ExperienceCard
-          number={"0"} description={'Experience'}
+          number={"2+"} description={'Experience'}
           />
           < ExperienceCard
             number={"3"} description={'Projects Completed'}
