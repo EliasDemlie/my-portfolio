@@ -25,7 +25,7 @@ export  default function Hero() {
         <div className=" pt-3 flex-shrink-0 lg:w-1/2 flex justify-center">
           <div className="w-72 h-72 rounded-full overflow-hidden">
             <Image
-              src="/images/profile.jpg"
+              src="/images/Elias demlie.png"
               alt="Elias's pic"
               width={300}
               height={300}
