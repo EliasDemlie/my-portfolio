@@ -52,7 +52,7 @@ export  default function Hero() {
           
            {/* github */}
           <a
-            href="https://github.com/eliasdm"
+            href="https://github.com/eliasdemlie"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-400 border border-cyan-400 rounded-full hover:text-black focus:bg-cyan-400 hover:bg-cyan-400 transition duration-10 p-2"
@@ -84,7 +84,7 @@ export  default function Hero() {
           </a>
           {/* twitter */}
           <a
-            href="https://twitter.com/elias_dm81"
+            href="https://twitter.com/elias_dm13"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-400 border border-cyan-400 rounded-full hover:text-black focus:bg-cyan-400 hover:bg-cyan-400 transition duration-10 p-2"
