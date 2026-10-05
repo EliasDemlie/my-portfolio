@@ -1,21 +1,23 @@
-"use client"; 
-import { useEffect } from "react";
-import axios from "axios";
-import Hero from "./hero/page";
+import VisitorNotifier from "./components/VisitorNotifier";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Skills from "./sections/Skills";
+import Services from "./sections/Services";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 export default function Home() {
-  useEffect(() => {
-    axios.post("/api/mailer", {
-      subject: "New Portfolio Visitor",
-      text: `Someone visited your portfolio on ${new Date().toLocaleString()}`,
-    }).catch(err => console.error("Error sending visitor notification:", err));
-  }, []);
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow">
-        <Hero />
-      </main>
-    </div>
+    <>
+      <VisitorNotifier />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Services />
+      <Projects />
+      <Contact />
+    </>
   );
 }
